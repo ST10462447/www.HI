@@ -1,0 +1,269 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# After Netlify Identity + Git Gateway are enabled (see setup guide),
+# this panel lets an invited person log in and edit the site's text
+# without touching any code.
+
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+
+collections:
+
+  - name: "home"
+    label: "Home Page"
+    files:
+      - name: "home"
+        label: "Home Page Content"
+        file: "content/home.json"
+        fields:
+          - { label: "Hero eyebrow line", name: "eyebrow", widget: "string" }
+          - { label: "Hero sub-headline (blue)", name: "subheadline", widget: "string" }
+          - { label: "Hero paragraph", name: "hero-paragraph", widget: "text" }
+
+          - { label: "\"Today\" item 1 — heading", name: "today-1-heading", widget: "string" }
+          - { label: "\"Today\" item 1 — text", name: "today-1-text", widget: "string" }
+          - { label: "\"Today\" item 2 — heading", name: "today-2-heading", widget: "string" }
+          - { label: "\"Today\" item 2 — text", name: "today-2-text", widget: "string" }
+          - { label: "\"Today\" item 3 — heading", name: "today-3-heading", widget: "string" }
+          - { label: "\"Today\" item 3 — text", name: "today-3-text", widget: "string" }
+
+          - { label: "\"Four journeys\" heading", name: "journeys-heading", widget: "string" }
+          - { label: "\"Four journeys\" sub-line", name: "journeys-subline", widget: "string" }
+
+          - { label: "Learn card — bullet points", name: "card-learn-list", widget: "list" }
+          - { label: "Learn card — price line", name: "card-learn-price", widget: "string" }
+          - { label: "Learn card — date line", name: "card-learn-date", widget: "string" }
+          - { label: "Teach card — bullet points", name: "card-teach-list", widget: "list" }
+          - { label: "Teach card — price line", name: "card-teach-price", widget: "string" }
+          - { label: "Teach card — date line", name: "card-teach-date", widget: "string" }
+          - { label: "Prove card — bullet points", name: "card-prove-list", widget: "list" }
+          - { label: "Prove card — price line", name: "card-prove-price", widget: "string" }
+          - { label: "Prove card — date line", name: "card-prove-date", widget: "string" }
+          - { label: "Fly card — bullet points", name: "card-fly-list", widget: "list" }
+          - { label: "Fly card — price line", name: "card-fly-price", widget: "string" }
+          - { label: "Fly card — date line", name: "card-fly-date", widget: "string" }
+
+          - { label: "Stat 1 — number", name: "stat1-num", widget: "string" }
+          - { label: "Stat 1 — label", name: "stat1-label", widget: "string" }
+          - { label: "Stat 2 — number", name: "stat2-num", widget: "string" }
+          - { label: "Stat 2 — label", name: "stat2-label", widget: "string" }
+          - { label: "Stat 3 — number", name: "stat3-num", widget: "string" }
+          - { label: "Stat 3 — label", name: "stat3-label", widget: "string" }
+          - { label: "Stat 4 — number", name: "stat4-num", widget: "string" }
+          - { label: "Stat 4 — label", name: "stat4-label", widget: "string" }
+
+          - { label: "\"Why IH\" heading", name: "why-heading", widget: "string" }
+          - { label: "Why point 1 — heading", name: "why1-heading", widget: "string" }
+          - { label: "Why point 1 — text", name: "why1-text", widget: "text" }
+          - { label: "Why point 2 — heading", name: "why2-heading", widget: "string" }
+          - { label: "Why point 2 — text", name: "why2-text", widget: "text" }
+          - { label: "Why point 3 — heading", name: "why3-heading", widget: "string" }
+          - { label: "Why point 3 — text", name: "why3-text", widget: "text" }
+          - { label: "Why point 4 — heading", name: "why4-heading", widget: "string" }
+          - { label: "Why point 4 — text", name: "why4-text", widget: "text" }
+
+          - { label: "Testimonial 1 — quote", name: "testi1-quote", widget: "text" }
+          - { label: "Testimonial 1 — who", name: "testi1-who", widget: "string" }
+          - { label: "Testimonial 2 — quote", name: "testi2-quote", widget: "text" }
+          - { label: "Testimonial 2 — who", name: "testi2-who", widget: "string" }
+          - { label: "Testimonial 3 — quote", name: "testi3-quote", widget: "text" }
+          - { label: "Testimonial 3 — who", name: "testi3-who", widget: "string" }
+
+          - { label: "\"3 ways to begin\" 1 — heading", name: "way1-heading", widget: "string" }
+          - { label: "\"3 ways to begin\" 1 — text", name: "way1-text", widget: "string" }
+          - { label: "\"3 ways to begin\" 2 — heading", name: "way2-heading", widget: "string" }
+          - { label: "\"3 ways to begin\" 2 — text", name: "way2-text", widget: "string" }
+          - { label: "\"3 ways to begin\" 3 — heading", name: "way3-heading", widget: "string" }
+          - { label: "\"3 ways to begin\" 3 — text", name: "way3-text", widget: "string" }
+
+          - { label: "News headline 1", name: "news1", widget: "string" }
+          - { label: "News headline 2", name: "news2", widget: "string" }
+
+          - { label: "Bottom \"Ready to start\" heading", name: "cta-heading", widget: "string" }
+
+  - name: "courses"
+    label: "Courses Page"
+    files:
+      - name: "courses"
+        label: "Courses Page Content"
+        file: "content/courses.json"
+        fields:
+          - { label: "Page heading", name: "heading", widget: "string" }
+          - { label: "Page intro", name: "intro", widget: "text" }
+          - { label: "General English — title", name: "learn1-title", widget: "string" }
+          - { label: "General English — description", name: "learn1-desc", widget: "text" }
+          - { label: "General English — date line", name: "learn1-date", widget: "string" }
+          - { label: "Professional English — title", name: "learn2-title", widget: "string" }
+          - { label: "Professional English — description", name: "learn2-desc", widget: "text" }
+          - { label: "Professional English — date line", name: "learn2-date", widget: "string" }
+          - { label: "Online Courses — title", name: "learn3-title", widget: "string" }
+          - { label: "Online Courses — description", name: "learn3-desc", widget: "text" }
+          - { label: "Online Courses — date line", name: "learn3-date", widget: "string" }
+          - { label: "CELTA — title", name: "teach1-title", widget: "string" }
+          - { label: "CELTA — description", name: "teach1-desc", widget: "text" }
+          - { label: "CELTA — date line", name: "teach1-date", widget: "string" }
+          - { label: "DELTA — title", name: "teach2-title", widget: "string" }
+          - { label: "DELTA — description", name: "teach2-desc", widget: "text" }
+          - { label: "DELTA — date line", name: "teach2-date", widget: "string" }
+          - { label: "Cambridge ESOL — title", name: "prove1-title", widget: "string" }
+          - { label: "Cambridge ESOL — description", name: "prove1-desc", widget: "text" }
+          - { label: "Cambridge ESOL — date line", name: "prove1-date", widget: "string" }
+          - { label: "OET — title", name: "prove2-title", widget: "string" }
+          - { label: "OET — description", name: "prove2-desc", widget: "text" }
+          - { label: "OET — date line", name: "prove2-date", widget: "string" }
+          - { label: "Aviation English — title", name: "fly1-title", widget: "string" }
+          - { label: "Aviation English — description", name: "fly1-desc", widget: "text" }
+          - { label: "Aviation English — date line", name: "fly1-date", widget: "string" }
+          - { label: "First Aid — title", name: "more1-title", widget: "string" }
+          - { label: "First Aid — description", name: "more1-desc", widget: "text" }
+          - { label: "First Aid — date line", name: "more1-date", widget: "string" }
+          - { label: "French — title", name: "more2-title", widget: "string" }
+          - { label: "French — description", name: "more2-desc", widget: "text" }
+          - { label: "French — date line", name: "more2-date", widget: "string" }
+          - { label: "Turkish — title", name: "more3-title", widget: "string" }
+          - { label: "Turkish — description", name: "more3-desc", widget: "text" }
+          - { label: "Turkish — date line", name: "more3-date", widget: "string" }
+          - { label: "Footnote", name: "note", widget: "string" }
+          - { label: "Bottom banner heading", name: "cta-heading", widget: "string" }
+
+  - name: "celta"
+    label: "CELTA Page"
+    files:
+      - name: "celta"
+        label: "CELTA Page Content"
+        file: "content/celta.json"
+        fields:
+          - { label: "Page heading", name: "heading", widget: "string" }
+          - { label: "Page intro", name: "intro", widget: "text" }
+          - { label: "\"Course description\" heading", name: "desc-heading", widget: "string" }
+          - { label: "\"Course description\" text", name: "desc-text", widget: "text" }
+          - { label: "\"Applicant profile\" heading", name: "profile-heading", widget: "string" }
+          - { label: "\"Applicant profile\" text", name: "profile-text", widget: "text" }
+          - { label: "\"Course requirements\" heading", name: "reqs-heading", widget: "string" }
+          - { label: "\"Course requirements\" text", name: "reqs-text", widget: "text" }
+          - { label: "\"Assessment\" heading", name: "assess-heading", widget: "string" }
+          - { label: "\"Assessment\" text", name: "assess-text", widget: "text" }
+          - { label: "\"Teaching practice\" heading", name: "practice-heading", widget: "string" }
+          - { label: "\"Teaching practice\" text", name: "practice-text", widget: "text" }
+          - { label: "How to apply — step 1", name: "step1", widget: "text" }
+          - { label: "How to apply — step 2", name: "step2", widget: "text" }
+          - { label: "How to apply — step 3", name: "step3", widget: "text" }
+          - { label: "How to apply — step 4", name: "step4", widget: "text" }
+          - { label: "Price", name: "price", widget: "string" }
+          - { label: "Price note", name: "price-note", widget: "string" }
+          - { label: "Key facts list", name: "keyfacts-list", widget: "list" }
+          - { label: "2026 dates list", name: "dates-list", widget: "list" }
+
+  - name: "exams"
+    label: "Exams Page"
+    files:
+      - name: "exams"
+        label: "Exams Page Content"
+        file: "content/exams.json"
+        fields:
+          - { label: "Page heading", name: "heading", widget: "string" }
+          - { label: "Page intro", name: "intro", widget: "text" }
+          - { label: "IELTS — bullet points", name: "ielts-list", widget: "list" }
+          - { label: "IELTS — price line", name: "ielts-price", widget: "string" }
+          - { label: "Cambridge ESOL — bullet points", name: "cambridge-list", widget: "list" }
+          - { label: "Cambridge ESOL — price line", name: "cambridge-price", widget: "string" }
+          - { label: "OET — bullet points", name: "oet-list", widget: "list" }
+          - { label: "OET — price line", name: "oet-price", widget: "string" }
+          - { label: "\"Prepare\" heading", name: "prep-heading", widget: "string" }
+          - { label: "\"Prepare\" text", name: "prep-text", widget: "text" }
+          - { label: "In-class — title", name: "inclass-title", widget: "string" }
+          - { label: "In-class — price", name: "inclass-price", widget: "string" }
+          - { label: "In-class — detail", name: "inclass-detail", widget: "string" }
+          - { label: "Private — title", name: "private-title", widget: "string" }
+          - { label: "Private — price", name: "private-price", widget: "string" }
+          - { label: "Private — detail", name: "private-detail", widget: "string" }
+          - { label: "Online — title", name: "online-title", widget: "string" }
+          - { label: "Online — price", name: "online-price", widget: "string" }
+          - { label: "Online — detail", name: "online-detail", widget: "string" }
+          - { label: "Bottom banner heading", name: "cta-heading", widget: "string" }
+
+  - name: "aviation"
+    label: "Aviation Page"
+    files:
+      - name: "aviation"
+        label: "Aviation Page Content"
+        file: "content/aviation.json"
+        fields:
+          - { label: "Page heading", name: "heading", widget: "string" }
+          - { label: "Page intro", name: "intro", widget: "text" }
+          - { label: "Accreditation box — title", name: "accred-title", widget: "string" }
+          - { label: "Accreditation box — text", name: "accred-text", widget: "text" }
+          - { label: "\"Safety\" heading", name: "intro2-heading", widget: "string" }
+          - { label: "\"Safety\" paragraph 1", name: "intro2-p1", widget: "text" }
+          - { label: "\"Safety\" paragraph 2", name: "intro2-p2", widget: "text" }
+          - { label: "ICAO criteria heading", name: "criteria-heading", widget: "string" }
+          - { label: "Levels heading", name: "levels-heading", widget: "string" }
+          - { label: "Levels footnote", name: "levels-footnote", widget: "text" }
+          - { label: "Test structure — heading", name: "test-heading", widget: "string" }
+          - { label: "Test structure — intro", name: "test-intro", widget: "string" }
+          - { label: "Test structure — list", name: "test-list", widget: "list" }
+          - { label: "\"How to prepare\" heading", name: "prepare-heading", widget: "string" }
+          - { label: "\"How to prepare\" text", name: "prepare-text", widget: "text" }
+
+  - name: "about"
+    label: "About Page"
+    files:
+      - name: "about"
+        label: "About Page Content"
+        file: "content/about.json"
+        fields:
+          - { label: "Page heading", name: "heading", widget: "string" }
+          - { label: "Page intro", name: "intro", widget: "text" }
+          - { label: "Facilities list", name: "facilities-list", widget: "list" }
+          - { label: "Teacher 1 — name", name: "t1-name", widget: "string" }
+          - { label: "Teacher 1 — role", name: "t1-role", widget: "string" }
+          - { label: "Teacher 2 — name", name: "t2-name", widget: "string" }
+          - { label: "Teacher 2 — role", name: "t2-role", widget: "string" }
+          - { label: "Teacher 3 — name", name: "t3-name", widget: "string" }
+          - { label: "Teacher 3 — role", name: "t3-role", widget: "string" }
+          - { label: "Teacher 4 — name", name: "t4-name", widget: "string" }
+          - { label: "Teacher 4 — role", name: "t4-role", widget: "string" }
+          - { label: "Teacher 5 — name", name: "t5-name", widget: "string" }
+          - { label: "Teacher 5 — role", name: "t5-role", widget: "string" }
+          - { label: "Teacher 6 — name", name: "t6-name", widget: "string" }
+          - { label: "Teacher 6 — role", name: "t6-role", widget: "string" }
+          - { label: "Teacher 7 — name", name: "t7-name", widget: "string" }
+          - { label: "Teacher 7 — role", name: "t7-role", widget: "string" }
+          - { label: "Teacher 8 — name", name: "t8-name", widget: "string" }
+          - { label: "Teacher 8 — role", name: "t8-role", widget: "string" }
+          - { label: "Social programme — heading", name: "social-heading", widget: "string" }
+          - { label: "Social programme — text", name: "social-text", widget: "text" }
+          - { label: "Charity box — heading", name: "charity-heading", widget: "string" }
+          - { label: "Charity box — text", name: "charity-text", widget: "text" }
+          - { label: "Bottom banner heading", name: "cta-heading", widget: "string" }
+
+  - name: "contact"
+    label: "Contact Page"
+    files:
+      - name: "contact"
+        label: "Contact Page Content"
+        file: "content/contact.json"
+        fields:
+          - { label: "Page heading", name: "heading", widget: "string" }
+          - { label: "Page intro", name: "intro", widget: "text" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Department emails", name: "departments", widget: "string" }
+          - { label: "Map note", name: "map-note", widget: "string" }
+
+  - name: "footer"
+    label: "Footer (all pages)"
+    files:
+      - name: "footer"
+        label: "Footer Content"
+        file: "content/footer.json"
+        fields:
+          - { label: "School name", name: "name", widget: "string" }
+          - { label: "Tagline", name: "tagline", widget: "string" }
+          - { label: "Address", name: "address", widget: "string" }
+          - { label: "Phone & email", name: "contact", widget: "string" }
+          - { label: "Charity line", name: "charity", widget: "string" }
+          - { label: "Copyright line", name: "copyright", widget: "string" }
