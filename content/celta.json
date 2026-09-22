@@ -1,22 +1,5 @@
 {
   "heading": "CELTA — Cambridge Certificate in English Language Teaching to Adults",
-  "intro": "Full-time initial qualification, typically 4 weeks, awarded by the University of Cambridge. For candidates with little or no teaching experience.",
-  "desc-heading": "Course description",
-  "desc-text": "Introductory teacher training for candidates with little or no previous TEFL experience. Recognised by EFL organisations worldwide — the most highly respected certificate of its kind.",
-  "profile-heading": "Applicant profile",
-  "profile-text": "Awareness of language and competence in written and spoken English; education standard allowing entry to Higher Education; usually 20+ years old.",
-  "reqs-heading": "Course requirements",
-  "reqs-text": "Min 120 hours over 4 weeks: input, tutorials, supervised lesson planning, 6 hours assessed teaching practice, peer observation, 6 hours directed observation, plus min 80 hours unsupervised work.",
-  "assess-heading": "Assessment",
-  "assess-text": "Awarded on meeting criteria for all written and practical assignments: needs assessment, lesson planning, language knowledge, teaching skills, professional awareness.",
-  "practice-heading": "Teaching practice",
-  "practice-text": "Daily practice in groups of six; teach at least two different levels; verbal and written tutor feedback on each assessed lesson.",
-  "step1": "Email celta@ihjoburg.co.za for the application form (site form planned)",
-  "step2": "Application evaluated — interview at the school",
-  "step3": "Pre-course task + prescribed methodology reading",
-  "step4": "Deposit secures place — full payment 3 weeks before start",
-  "price": "R21,900",
-  "price-note": "+ R400 refundable deposit",
   "keyfacts-list": [
     "Full-time — 4 weeks — min 120 hours",
     "Awarded by University of Cambridge",
@@ -24,6 +7,9 @@
     "80% attendance min per component",
     "Registration closes 3 weeks before start"
   ],
+  "reqs-text": "Min 120 hours over 4 weeks: input, tutorials, supervised lesson planning, 6 hours assessed teaching practice, peer observation, 6 hours directed observation, plus min 80 hours unsupervised work.",
+  "step1": "Email celta@ihjoburg.co.za for the application form",
+  "desc-heading": "Course description",
   "dates-list": [
     "02 Feb – 27 Feb",
     "30 Mar – 24 Apr",
@@ -31,5 +17,19 @@
     "27 Jul – 21 Aug « next",
     "21 Sep – 16 Oct",
     "09 Nov – 04 Dec"
-  ]
+  ],
+  "step2": "Application evaluated — interview at the school",
+  "step3": "Pre-course task + prescribed methodology reading",
+  "step4": "Deposit secures place — full payment 3 weeks before start",
+  "price": "R21,900",
+  "desc-text": "Introductory teacher training for candidates with little or no previous TEFL experience. Recognised by EFL organisations worldwide — the most highly respected certificate of its kind.",
+  "reqs-heading": "Course requirements",
+  "intro": "Full-time initial qualification, typically 4 weeks, awarded by the University of Cambridge. For candidates with little or no teaching experience.",
+  "practice-heading": "Teaching practice",
+  "profile-text": "Awareness of language and competence in written and spoken English; education standard allowing entry to Higher Education; usually 20+ years old.",
+  "price-note": "+ R400 refundable deposit",
+  "assess-text": "Awarded on meeting criteria for all written and practical assignments: needs assessment, lesson planning, language knowledge, teaching skills, professional awareness.",
+  "assess-heading": "Assessment",
+  "profile-heading": "Applicant profile",
+  "practice-text": "Daily practice in groups of six; teach at least two different levels; verbal and written tutor feedback on each assessed lesson."
 }
