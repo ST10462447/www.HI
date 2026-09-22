@@ -6,7 +6,7 @@
 <title>Contact us — International House Johannesburg</title>
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body data-page="contact">
 
 <header class="site-header">
   <div class="container">
@@ -34,8 +34,8 @@
   <section class="hero">
     <div class="container">
       <p class="eyebrow">International House Johannesburg</p>
-      <h1>Contact us</h1>
-      <p class="lede">Call, email, WhatsApp or send the form — the school answers all of them.</p>
+      <h1 id="cms-contact-heading">Contact us</h1>
+      <p class="lede" id="cms-contact-intro">Call, email, WhatsApp or send the form — the school answers all of them.</p>
     </div>
   </section>
 
@@ -45,18 +45,18 @@
         <div class="contact-card">
           <dl class="contact-info">
             <dt>Address</dt>
-            <dd>5 Winchester Road, Parktown, Johannesburg, South Africa</dd>
+            <dd id="cms-contact-address">5 Winchester Road, Parktown, Johannesburg, South Africa</dd>
             <dt>Phone</dt>
-            <dd>+27 11 339-1051</dd>
+            <dd id="cms-contact-phone">+27 11 339-1051</dd>
             <dt>Email</dt>
-            <dd>info@ihjoburg.co.za</dd>
+            <dd id="cms-contact-email">info@ihjoburg.co.za</dd>
           </dl>
-          <p class="text-muted" style="font-size:12.5px;margin-top:14px;">Departments: celta@ / ielts@ / aviation@ ihjoburg.co.za</p>
+          <p class="text-muted" style="font-size:12.5px;margin-top:14px;" id="cms-contact-departments">Departments: celta@ / ielts@ / aviation@ ihjoburg.co.za</p>
           <a href="https://wa.me/27113391051" class="btn btn-whatsapp" style="margin-top:18px;">Chat on WhatsApp</a>
         </div>
 
         <div class="map-embed" style="margin-top:20px;">
-          Map — embedded map of 5 Winchester Road, Parktown <span style="opacity:.7;">(new feature — none on current site)</span>
+          <span id="cms-contact-map-note">Map — embedded map of 5 Winchester Road, Parktown <span style="opacity:.7;">(new feature — none on current site)</span></span>
         </div>
 
         <h3 style="font-size:17px;font-weight:800;color:var(--navy);margin:28px 0 14px;">Follow the school</h3>
@@ -108,11 +108,11 @@
   <div class="container">
     <div class="footer-top">
       <div>
-        <h4>International House Johannesburg</h4>
-        <p>Formerly The Language Lab — IH World Organisation affiliate</p>
-        <p>5 Winchester Road, Parktown, Johannesburg, South Africa</p>
-        <p>+27 11 339-1051 — info@ihjoburg.co.za</p>
-        <p class="footer-support">We support Woodside Sanctuary</p>
+        <h4 id="cms-footer-name">International House Johannesburg</h4>
+        <p id="cms-footer-tagline">Formerly The Language Lab — IH World Organisation affiliate</p>
+        <p id="cms-footer-address">5 Winchester Road, Parktown, Johannesburg, South Africa</p>
+        <p id="cms-footer-contact">+27 11 339-1051 — info@ihjoburg.co.za</p>
+        <p class="footer-support" id="cms-footer-charity">We support Woodside Sanctuary</p>
       </div>
       <div>
         <h4>Learn</h4>
@@ -127,10 +127,11 @@
         <ul><li>Facebook · Instagram · LinkedIn</li><li>YouTube · WhatsApp</li></ul>
       </div>
     </div>
-    <div class="footer-bottom">&copy; International House Johannesburg — www.ihjohannesburg.co.za</div>
+    <div class="footer-bottom" id="cms-footer-copyright">&copy; International House Johannesburg — www.ihjohannesburg.co.za</div>
   </div>
 </footer>
 
+<script src="assets/js/content-loader.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
