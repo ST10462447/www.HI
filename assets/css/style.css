@@ -118,6 +118,14 @@ button{ font-family: inherit; cursor:pointer; }
 
 .header-cta{ display:flex; align-items:center; gap:12px; flex-shrink:0; }
 .nav-toggle{ display:none; }
+.edit-site-link{
+  display:inline-flex; align-items:center; gap:6px;
+  padding: 8px 14px; border-radius: var(--radius-pill);
+  background: var(--bg-soft); border:1px solid var(--border);
+  font-weight:700; font-size:13px; color: var(--navy);
+}
+.edit-site-link::before{ content:"\270E"; font-size:12px; }
+.edit-site-link:hover{ background:#e9f0fb; }
 
 @media (max-width: 900px){
   .main-nav{ display:none; }

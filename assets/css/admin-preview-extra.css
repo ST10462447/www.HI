@@ -1,0 +1,3 @@
+/* Preview-pane-only tweaks — not used on the live site */
+body { margin: 0; }
+.preview-page section:first-child { padding-top: 0; }
